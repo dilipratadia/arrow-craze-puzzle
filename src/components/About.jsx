@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowUp, CheckCircle, Heart, PlayCircle } from 'lucide-react';
+import { CheckCircle, Heart, PlayCircle } from 'lucide-react';
 
 const Step = ({ icon, title, desc }) => (
     <div className="flex items-start gap-4">
@@ -56,13 +56,13 @@ const About = () => {
                         transition={{ duration: 0.8 }}
                         className="mt-12 lg:mt-0 relative"
                     >
-                        <div className="aspect-square rounded-2xl bg-[#111] border border-white/10 p-8 relative overflow-hidden flex items-center justify-center">
+                        <div className="rounded-2xl bg-[#111] border border-white/10 p-4 relative overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-br from-[#00E676]/10 to-transparent"></div>
-                            <div className="text-center z-10">
-                                <ArrowUp size={80} className="text-[#00E676] mx-auto mb-4 animate-bounce" />
-                                <p className="text-2xl font-bold">Level 125</p>
-                                <p className="text-sm text-gray-500">Sample Game View</p>
-                            </div>
+                            <img
+                                src="GamePreview.png"
+                                alt="Arrow Craze Puzzle Game Preview"
+                                className="w-full h-auto rounded-xl relative z-10 shadow-[0_0_30px_rgba(0,230,118,0.2)]"
+                            />
                         </div>
                     </motion.div>
                 </div>
